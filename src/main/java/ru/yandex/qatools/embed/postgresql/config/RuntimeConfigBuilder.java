@@ -16,6 +16,7 @@ public class RuntimeConfigBuilder extends de.flapdoodle.embed.process.config.Run
         processOutput().setDefault(ProcessOutput.getDefaultInstance(command.commandName()));
         commandLinePostProcessor().setDefault(new ICommandLinePostProcessor.Noop());
         artifactStore().setDefault(storeBuilder().defaults(command).build());
+        daemonProcess(false);
         return this;
     }
 
@@ -29,6 +30,7 @@ public class RuntimeConfigBuilder extends de.flapdoodle.embed.process.config.Run
                 .build();
 
         artifactStore().overwriteDefault(storeBuilder().defaults(command).download(downloadConfig).build());
+        daemonProcess(false);
         return this;
     }
 

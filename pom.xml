@@ -8,7 +8,7 @@
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>ru.yandex.qatools.embed</groupId>
+    <groupId>com.transferwise.embedded</groupId>
     <artifactId>postgresql-embedded</artifactId>
     <version>2.3-SNAPSHOT</version>
     <name>Embedded PostgreSQL (based on Flapdoodle-OSS embedded services)</name>
